@@ -6,3 +6,7 @@
 curl -LsS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 ```
 
+## SQL-Mode 
+
+https://mariadb.com/kb/en/sql-mode/#:~:text=SQL_MODE%20is%20used%20for%20getting,commas%20('%20%2C%20')%20without%20spaces.
+
