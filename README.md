@@ -21,3 +21,10 @@ https://jira.mariadb.org/browse/MDEV-21189
 ## MySQL Performance Blog ##
 
 https://www.percona.com/blog/
+
+## Mysql copy-back 
+```
+chown -R mysql:mysql /var/lib/mysql
+chmod -R 755 /var/lib/mysql
+restorecon -vr /var/lib/mysql
+```
