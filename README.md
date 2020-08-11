@@ -28,3 +28,6 @@ chown -R mysql:mysql /var/lib/mysql
 chmod -R 755 /var/lib/mysql
 restorecon -vr /var/lib/mysql
 ```
+
+## Events 
+https://mariadb.com/kb/en/events/
