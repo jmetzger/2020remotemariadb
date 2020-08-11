@@ -17,3 +17,7 @@ https://mariadb.com/kb/en/sql-mode/#:~:text=SQL_MODE%20is%20used%20for%20getting
 https://jira.mariadb.org/browse/MDEV-21189
 
 ```
+
+## MySQL Performance Blog ##
+
+https://www.percona.com/blog/
