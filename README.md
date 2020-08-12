@@ -41,6 +41,31 @@ Does not work well with multiple cores because of mutex.
   * but not simultaneously
   * Mutex is set to unlock when the data is no longer needed
   * or when a routine is finished. 
-  * Mutex creates a bottleneck effect. 
+  * Mutex creates a bottleneck effect.
   
+https://mariadb.com/de/resources/blog/flexible-mariadb-server-query-cache/
+  
+## Windows: Login without Pass
+
+  * If you use mysql with a -u switch, the user, that is logged in to Windows will be used 
+  * You can simply test this with "mysql" and without any params.
+  * You will then get an error and the user being used will be shown.
+
+You need to install plugin gssapi (which comes with the mariadb installation) 
+
+2 things need be the case that it works
+
+  * Server needs to be in the Domain
+  * MariaDB needs be configured to be started with NetworkService 
+  
+ See more details: 
  
+ ## Lock Tables - Who locks tables ?
+ 
+ This is only for explicit locks !
+ 
+ https://mariadb.com/kb/en/lock-tables/
+ 
+ Show open tables helps here 
+ https://mariadb.com/kb/en/show-open-tables/
+
