@@ -1,4 +1,4 @@
-# 2020remote
+# MariaDB Administration (Remote) 
 
 ## Linux Mariadb Repos installieren 
 
@@ -31,3 +31,16 @@ restorecon -vr /var/lib/mysql
 
 ## Events 
 https://mariadb.com/kb/en/events/
+
+## Query Cache 
+
+Does not work well with multiple cores because of mutex.
+(Mutual Exclusion Object) 
+
+  * allows multiple program threads to share a resource (such as a folder) 
+  * but not simultaneously
+  * Mutex is set to unlock when the data is no longer needed
+  * or when a routine is finished. 
+  * Mutex creates a bottleneck effect. 
+  
+ 
