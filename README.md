@@ -59,6 +59,7 @@ You need to install plugin gssapi (which comes with the mariadb installation)
   * MariaDB needs be configured to be started with NetworkService 
   
  See more details: 
+ https://mariadb.com/kb/en/authentication-plugin-gssapi/
  
  ## Lock Tables - Who locks tables ?
  
