@@ -80,3 +80,6 @@ The best solution is done with performance_schema
   select th.*,t.* from table_handles th join threads t on th.owner_thread_id = t.thread_id;
   ```
   
+  ## Implicit innodb locks 
+  
+  https://stackoverflow.com/questions/25903764/why-is-an-ix-lock-compatible-with-another-ix-lock-in-innodb
