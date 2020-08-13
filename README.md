@@ -87,3 +87,7 @@ The best solution is done with performance_schema
 ## MySQL Performance PDF 
 
 http://schulung.t3isp.de/documents/pdfs/mysql/mysql-performance.pdf
+
+## Upgrade Minor Version MariaDB Windows 
+
+https://mariadb.com/kb/en/upgrading-mariadb-on-windows/
