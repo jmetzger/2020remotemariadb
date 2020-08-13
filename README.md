@@ -70,7 +70,8 @@ The best solution is done with performance_schema
     
   * Enable performance schema in my.cnf/my.ini peformance_schema=on 
   
-       # Now you can see the user aka connection 
-       select th.*,t.* from table_handles th join threads t on th.owner_thread_id = t.thread_id;
-  
+  ```
+  # Now you can see the user aka connection 
+  select th.*,t.* from table_handles th join threads t on th.owner_thread_id = t.thread_id;
+  ```
   
