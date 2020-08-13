@@ -61,12 +61,15 @@ You need to install plugin gssapi (which comes with the mariadb installation)
  See more details: 
  https://mariadb.com/kb/en/authentication-plugin-gssapi/
  
- ## Lock Tables - Who locks tables ?
+## Lock Tables - Who locks tables ?
  
- This is only for explicit locks !
- 
- https://mariadb.com/kb/en/lock-tables/
- 
- Show open tables helps here 
- https://mariadb.com/kb/en/show-open-tables/
+Show open tables helps here - but does not show the user
+https://mariadb.com/kb/en/show-open-tables/
 
+The best solution is done with performance_schema 
+    
+  * Enable performance schema in my.cnf/my.ini peformance_schema=on 
+  
+   select th.*,t.* from table_handles th join threads t on th.owner_thread_id = t.thread_id;
+  
+  
